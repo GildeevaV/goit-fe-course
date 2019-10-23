@@ -25,9 +25,8 @@ body {
 .container {
   width: 900px;
   margin: 0 auto;
-  padding: 0;
-  font-size: 0;
 }
+
 /* NAVIGATION MENU */
 .nav li { 
   display: inline-block;
@@ -39,6 +38,7 @@ body {
 
 .nav li:last-child {
 margin-right: 0;
+padding: 0;
 }
 
 .nav a {
@@ -62,12 +62,14 @@ a:hover {
 /* MAIN CONTENT */
 .section {
   font-size: 0;
+  padding-bottom: 150px;
 }
 
 .article {
 display: inline-block;
 width: 420px;
 margin-right: 0px;
+margin-bottom: 132px;
 }
 
 .article:nth-child(2n) {
@@ -97,7 +99,6 @@ margin-right: 0px;
   font-weight: 400;
   line-height: 24px;
   margin: 0;
-  margin-bottom: 132px;
   }
   
  .image {
