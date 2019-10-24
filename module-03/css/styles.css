@@ -8,11 +8,6 @@ html {
   box-sizing: inherit;
 }
 
-/* * {
-  outline: 1px solid red;
-}
-*/ 
-
 body {
   font-family: "Playfair Display", serif;
   color: #626262;
@@ -56,13 +51,19 @@ padding: 0;
   padding-top: 74px;
 }
 
+.nav-list {
+  margin: 0;
+  font-size: 0;
+}
+
 a:hover {
   color: #03a9f4;
 }
+
 /* MAIN CONTENT */
 .section {
+  padding-bottom: 70px;
   font-size: 0;
-  padding-bottom: 150px;
 }
 
 .article {
@@ -78,7 +79,7 @@ margin-bottom: 132px;
 
 .subtitle {
   font-family: "Ubuntu", sans-serif;
-  font-weight: 300;
+  font-weight: 200;
   font-size: 14px;
   margin: 0;
   margin-bottom: 20px;
@@ -98,7 +99,6 @@ margin-bottom: 132px;
   font-family: "PlayfairDisplay";
   font-weight: 400;
   line-height: 24px;
-  margin: 0;
   }
   
  .image {
@@ -110,8 +110,6 @@ margin-bottom: 132px;
 
 .load {
   border: 1px solid #626262;
-  /* height: 58px;
-  width: 165px; */
   font-size: 20px;
   font-family: "Playfair Display";
   font-weight: 400;
@@ -124,7 +122,6 @@ button {
    display: block;
    background-color: #ffffff;
    margin: 0 auto;
-   margin-bottom: 70px;
   }
 
 button:hover {
