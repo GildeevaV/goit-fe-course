@@ -11,7 +11,6 @@ body {
     font-family: "Open Sans","Roboto", "Arial", sans-serif;
     color: #515151;
     font-size: 14px;
-    line-height: 26px;
 }
 
 .clearfix::after {
@@ -28,47 +27,44 @@ img {
 
 .wrapper {
     padding-top: 43px;
-    padding-bottom: 111px;
-}
-
-.site-logo {
-margin-left: 500px;
+    padding-bottom: 52px;
 }
 
 
 .container {
-    width: 1600px;
-    background-color: #ffffff;      
+    width: 1110px;
+    /* background-color: #ffffff;       */
     margin: 0 auto;
-    padding: 30px;
 }
 
-.page-header {
-   background-color: #ffffff;
-}
+/* .page-header {
+  
+} */
 
 .site-logo {
     display: inline-block;
 }
             /* SITE NAVIGATION */
 .site-navigation {
-    display: inline-block;
-    width: 1045px;
+    float: right;
     margin: 0;
     padding: 0;
     font-size: 14px;
     list-style: none;
     text-align: right;
+    line-height: 21px;
 }
 
 .site-navigation li {
- display: inline-block;  
+ /* display: block;   */
+ float: left;
  margin-right: 40px;                  
 }
 
 .site-navigation li:last-child {
     margin-right: 0;
 }
+
 .site-navigation a {
     color: #1c1b1b;
     font-weight: 700; 
@@ -94,82 +90,146 @@ margin-left: 500px;
   color: #555252;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 102px;
+  margin-bottom: 92px; 
+  margin-top: 40px;
 }
 
 .features-title::after {
    content: '';  
    display: block; 
-   width: 136px; 
-   height: 3px;  
-   color: #1abc9c;            /*НЕ ПРИМЕНИЛОСЬ */                          
+   width: 164px;
+   height: 7px; 
+   background-color: #1abc9c; 
+   margin: 0 auto;  
+   margin-top: 30px;                              
 }
 
 .features-list-item {
-     float: left; 
-     margin: 30px; 
-     padding: 0;    
+    width: 255px;
+    float: left; 
+    margin-right: 30px; 
+    margin-bottom: 30px;
+    padding: 0;    
+}
+
+.features-list-box:hover .product-name {
+background-color: #1abc9c;
+}
+
+.features-list-box:hover .product-price {
+    background-color: #7fd9c7;
+    }
+
+.features-list {
+    padding: 0;
 }
 
 .features-list-item:nth-child(4n) {
-    margin-right: 30px;
+    margin-right: 0px;
 }
 
 .box {
     background-color: #323232;
+    margin: 0;
+    padding: 0;
+    width: 255px;
+    height: 40px;
 }
 
 .product-name {
+    width: 200px;
     float: left;
     font-family: "Roboto";
     font-weight: 600; 
     font-size: 18px;
     color: #ffffff;
     text-transform: uppercase;
+    text-indent: 12px;
+    margin: 0;
+    padding: 0;
+    line-height: 40px;
 }
 
-.product-name:hover {
-    color: #1abc9c;
-}
+/* .product-name:hover {
+    background-color: #1abc9c;
+} */
 
 .product-price {
+    width: 55px;
     float: right;
     background-color: #8c8c8c;
+    text-indent: 12px;
     text-transform: uppercase;
     font-family: "Roboto";
     font-weight: 600; 
     font-size: 18px;
     color: #ffffff;
+    margin: 0;
+    padding: 0;
+    line-height: 40px;
 }
 
-.product-price:hover {
-    color: #1abc9c;
-}
+/* .product-price:hover {
+    background-color: #1abc9c;
+} */
 
 /* BLOG SECTION  */
 
 .section-title {
-    font-size: 58px;
-    line-height: 48px;
+    font-size: 48px;
+    line-height: 32px;
     text-transform: uppercase;
-    vertical-align: middle;
-    margin-bottom: 50px;
+    text-align: center;
+    margin-bottom: 120px;
+    margin-top: 75px;
 }
+
+.section-title::after {
+    content: '';  
+    display: block; 
+    width: 164px;
+    height: 7px; 
+    background-color: #1abc9c; 
+    margin: 0 auto;  
+    margin-top: 30px;
+}
+
+ .article {
+     float: left;
+     width: 350px;
+     margin-right: 30px;
+ }
+ 
+ .article:last-child {
+    margin-right: 0;
+}
+
 
 .news-title {
     font-family: "Open Sans", semibold;
     color: #555252;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 26px;
 }
+
+.news-title::after {
+    content: '';  
+    display: inline-block; 
+    width: 136px;
+    height: 3px; 
+    background-color: #1abc9c; 
+    margin: 0 auto;  
+    margin-top: 30px;
+}
+
 
 .content {
     font-family: "Open Sans";
     color: #555252;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 26px;
 }   
 
-/* .article {
-    float: left; 
-}  */
+.news {
+    padding-bottom: 82px;
+}
