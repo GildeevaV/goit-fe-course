@@ -58,7 +58,7 @@ ul {
     color: black;
     text-transform: uppercase;
 }
- a:hover{
+ .header__list-link:hover{
 color: #1abc9c; 
  }
 
@@ -303,10 +303,8 @@ background-position: bottom 12px right 123px;
 
 .item-button:hover {
     background-color: #1abc9c;
+    border: #1abc9c;
 }
-  /* .collection-list-item:nth-child(n+4) {
-      margin-bottom: 0;
-  } */
   
   .box {
       background-color: #323232;
@@ -334,7 +332,7 @@ background-position: bottom 12px right 123px;
   .product-price {
       width: 55px;
       float: right;
-      background-color: #8c8c8c;
+      background-color: rgba(140, 140, 140, .5);
       text-indent: 12px;
       text-transform: uppercase;
       font-family: "Roboto";
@@ -346,6 +344,23 @@ background-position: bottom 12px right 123px;
       line-height: 40px;
   }
   
+  .collection-link {
+      display: block;
+      color: #fff;
+  }
+
+  .box:hover  {
+    background-color: #1abc9c;
+  }
+
+  /* .product-price:hover{
+    background-color: #1abc9c;
+    color: #ffffff;
+  } */
+   /* .box:hover {
+    background-color: #1abc9c;  
+   } */
+
   .collection-list-item:nth-child(4n) {
   margin-right: 0;
   }
@@ -373,3 +388,6 @@ background-position: bottom 12px right 123px;
     text-transform: capitalize;
     color: #ffffff;
 }
+.author-name:hover  {
+    color: #1abc9c;
+  }
