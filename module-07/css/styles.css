@@ -314,6 +314,7 @@ margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
     margin-top: 70px;
+    /* outline: none; */
   }
   
   input:focus:valid, 
@@ -331,6 +332,7 @@ margin-bottom: 20px;
     width: 455px;
     height: 50px;
     margin-bottom: 28px;
+    outline: none; 
   }
   
   .input-form:last-child {
@@ -351,6 +353,7 @@ margin-bottom: 20px;
     color: #bbbbbb;
     text-transform: uppercase;
     padding: 20px;
+    resize: none;
   }
   
   .form-button {
