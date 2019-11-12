@@ -59,23 +59,21 @@
      <div class="container">
         <h2 class="header__contacts-title">Contact Us</h2>
          <p class="header__contacts-subtitle">Proin iaculis purus consequat sem cure.</p>
-         <div class="contact__content">
-             <form action="#" class="contact__form">
-                 <input name="name" type="text" class="contact__form-input" placeholder="Your name*" required
-                                minlength="3">
-                  <input name="email" type="email" class="contact__form-input" placeholder="Your email*" required>
-                  <input name="phone" type="text" class="contact__form-input" placeholder="Subject">
-                </form>
-                
-                  <textarea name="comment" cols="30" rows="10" class="contact__form-textarea"
-                                placeholder="Your message*"></textarea>
-                  <div class="contact__form-btn-wrapper">
-                 <button class="contact__form-btn">Send message</button>
-                 </div>
-           
-         </div>
+         <form action="#">
+                <div class="contact-form">
+                <div>
+                <input class="input-form" type="text" name="subject" required placeholder="Your name *">
+                <input class="input-form" type="mail" name="email" required placeholder="Your e-mail *">
+                <input class="input-form" type="text" name="subject" required placeholder="Subject">
+                </div>
+                <div class="textarea-form">
+                <textarea class="textarea-place" required name="body" rows="5" cols="45" placeholder="Your message *"></textarea>
+                </div>
+                </div>
+                <button class="form-button">Send message</button>
+            </form>
      </div>
  </section>
-    </main>
+</main>
 </body>
 </html>
