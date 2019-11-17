@@ -133,6 +133,7 @@ ul {
     justify-content: space-between;
     min-width: 491px;
     margin-top: 10px;
+    padding-bottom: 187px;
 }
 
 .header__nav-link::after {
@@ -196,7 +197,7 @@ ul {
 .welcome__subtitle {
     font-family: "Kaushan Script";
     font-size: 72px;
-    color: black;
+    color: #ffffff;
     text-align: center;
     margin-bottom: 21px;
 }
@@ -205,10 +206,20 @@ ul {
     font-family: "MontserratB", serif;
     font-size: 150px;
     font-weight: 700;
-    color: black;
+    color: #ffffff;
     text-align: center;
     margin-bottom: 113px;
     text-transform: uppercase;
+}
+
+.services__title::after {
+    display: block;
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 0 auto;
+    margin-top: 42px;
 }
 
 
@@ -239,7 +250,7 @@ ul {
 }
 
 .services__list-item-text {
-    font-family: "Roboto Slab";
+    font-family: "RobotoR", sans-serif;
     font-size: 15px;
     color: #999999;
     line-height: 24px;
@@ -253,7 +264,7 @@ ul {
 }
 
 .services__list-icon {
-    fill: #bfede5;
+    fill: #5edfc9;
     width: 30px;
     height: 30px;
     margin-right: 30px;
@@ -265,6 +276,7 @@ ul {
     color: black;
     text-align: center;
     margin-bottom: 21px;
+    padding-top: 50px;
 }
 
 .services__title {
@@ -315,7 +327,7 @@ ul {
 }
 
 .team-text {
-    font-family: "Roboto Slab";
+    font-family: "RobotoR", sans-serif;
     font-size: 15px;
     line-height: 24px;
     text-align: center;
@@ -344,6 +356,10 @@ ul {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 22px;
+}
+
+.team-list__image {
+    margin-bottom: 30px;
 }
 
 .team-list-position {
@@ -386,15 +402,27 @@ ul {
 }
 
 .social-icon {
-    display: block;
     height: 55px;
     width: 55px;
     background-color: #fce38a;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .social-icon:hover {
-    background-color: #95e1d3;
+    background-color: #f38181;
+}
+
+.social-icon:hover svg {
+    fill: #fff;
+}
+
+.social-icon svg {
+    fill: #f38181;
+    width: 25px;
+    height: 25px;
 }
 
 .team-list-item:hover .overlay {
