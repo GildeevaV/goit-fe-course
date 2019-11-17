@@ -72,10 +72,12 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: inherit;
     box-sizing: inherit;
 }
 
 html {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -106,7 +108,11 @@ ul {
 /*HEADER SECTION */
 
 .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding-top: 30px;
 }
@@ -129,7 +135,11 @@ ul {
 }
 
 .header__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     min-width: 491px;
     margin-top: 10px;
@@ -165,6 +175,8 @@ ul {
 /* HEADER */
 
 .gradient {
+    background: -webkit-gradient( linear, left top, left bottom, from(rgba(243, 129, 129, 0.9)), to(rgba(252, 227, 138, 0.9)));
+    background: -o-linear-gradient( rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
     background: linear-gradient( rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
 }
 
@@ -236,8 +248,13 @@ ul {
 }
 
 .services__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -259,6 +276,8 @@ ul {
 .services__list-item {
     width: 383px;
     margin-bottom: 96px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding-left: 30px;
 }
@@ -337,7 +356,11 @@ ul {
 }
 
 .team-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -379,25 +402,43 @@ ul {
     top: 0;
     left: 0;
     opacity: 0;
+    -webkit-transition: -webkit-transform 0.2s linear, -webkit-box-shadow 0.2s linear 0s;
+    transition: -webkit-transform 0.2s linear, -webkit-box-shadow 0.2s linear 0s;
+    -o-transition: transform 0.2s linear, box-shadow 0.2s linear 0s;
     transition: transform 0.2s linear, box-shadow 0.2s linear 0s;
+    transition: transform 0.2s linear, box-shadow 0.2s linear 0s, -webkit-transform 0.2s linear, -webkit-box-shadow 0.2s linear 0s;
 }
 
 .social-list {
     position: absolute;
     left: 50%;
     top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     list-style: none;
     margin: 0;
     padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
 .social-list__item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
     flex: 0 1 auto;
+    -ms-flex-item-align: auto;
+    -ms-grid-row-align: auto;
     align-self: auto;
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 0;
     order: 0;
 }
 
@@ -406,8 +447,14 @@ ul {
     width: 55px;
     background-color: #fce38a;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -427,7 +474,10 @@ ul {
 
 .team-list-item:hover .overlay {
     opacity: 1;
+    -webkit-transform: translate(-10px, -10px);
+    -ms-transform: translate(-10px, -10px);
     transform: translate(-10px, -10px);
+    -webkit-box-shadow: 10px 10px 0 0 #95e1d3;
     box-shadow: 10px 10px 0 0 #95e1d3;
 }
 
@@ -435,6 +485,8 @@ ul {
     position: absolute;
     left: 50%;
     top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
@@ -456,8 +508,15 @@ ul {
 }
 
 .footer-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     color: black;
     font-family: "MontserratR";
@@ -491,6 +550,8 @@ ul {
 }
 
 .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 28px;
     margin-bottom: 30px;
