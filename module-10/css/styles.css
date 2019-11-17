@@ -111,6 +111,16 @@ ul {
     padding-top: 30px;
 }
 
+.header__nav-link svg {
+    width: 15px;
+    height: 15px;
+    fill: white;
+}
+
+.header__nav-link:hover svg {
+    fill: #fce38a;
+}
+
 .header__logo {
     font-family: "MontserratB", serif;
     font-size: 30px;
@@ -155,6 +165,17 @@ ul {
 
 .gradient {
     background: linear-gradient( rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
+}
+
+.header-wrapper {
+    position: relative;
+}
+
+.header-wrapper__banner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
 .welcome__btn {
@@ -227,8 +248,15 @@ ul {
 .services__list-item {
     width: 383px;
     margin-bottom: 96px;
-    background-repeat: no-repeat;
-    padding-left: 55px;
+    display: flex;
+    padding-left: 30px;
+}
+
+.services__list-icon {
+    fill: #bfede5;
+    width: 30px;
+    height: 30px;
+    margin-right: 30px;
 }
 
 .services__subtitle {
@@ -249,28 +277,10 @@ ul {
     text-transform: uppercase;
 }
 
-.services__list-item:first-child {
-    background-image: url("../img/ALARM.png");
-}
-
-.services__list-item:nth-child(2) {
-    background-image: url("../img/LINE-GRAPH.png");
-}
-
-.services__list-item:nth-child(3) {
-    background-image: url("../img/COMPUTER\ _\ OK.png");
-}
-
-.services__list-item:nth-child(4) {
-    background-image: url("../img/BOOK-2.png");
-}
-
-.services__list-item:nth-child(5) {
-    background-image: url("../img/HOME.png");
-}
-
-.services__list-item:last-child {
-    background-image: url("../img/IMAGE.png");
+.services__list-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 30px;
 }
 
 

@@ -13,6 +13,8 @@
 
 <body>
     <div class="header-wrapper gradient">
+        <img srcset="./img/Layer-15.jpg 1920w,./img/Layer-15@2x.jpg 3840w" src="./img/Layer-15.jpg" class="header-wrapper__banner" sizes="1920px">
+
         <header class="header container">
             <a href="#" class="header__logo">MoGo</a>
             <ul class="header__nav">
@@ -35,15 +37,15 @@
                 <li class="header__nav-item">
                     <a href="" class="header__nav-link">
                         <svg>
-                        <use href="./img/sprite.svg#cart"></use>
-                      </svg>
+              <use href="./img/sprite.svg#cart"></use>
+            </svg>
                     </a>
                 </li>
                 <li class="header__nav-item">
                     <a href="" class="header__nav-link">
                         <svg>
-                            <use href="./img/sprite.svg#search"></use>
-                          </svg>
+              <use href="./img/sprite.svg#search"></use>
+            </svg>
                     </a>
                 </li>
             </ul>
@@ -65,8 +67,13 @@
 
             <ul class="services__list">
                 <li class="services__list-item">
-                    <h3 class="services__list-item-title">Photography</h3>
-                    <p class="services__list-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                    <svg class="services__list-icon">
+                    <use href="./img/sprite.svg#alarm"></use>
+                  </svg>
+                    <div class="services__list-content">
+                        <h3 class="services__list-item-title">Photography</h3>
+                        <p class="services__list-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                    </div>
                 </li>
                 <li class="services__list-item">
                     <h3 class="services__list-item-title">Web design</h3>
