@@ -1,0 +1,63 @@
+.footer {
+    padding-bottom: 23px;
+    background-color: $white-color;
+    text-align: center;
+}
+
+.footer-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    color: $dark-grey-color;
+    font-family: $montserratR-font;
+    font-size: 14px;
+    border-top: 1px solid $light-grey-color;
+}
+
+.copyright {
+    color: $dark-grey-color;
+}
+
+.copyright:hover {
+    color: $pink-color;
+}
+
+.btn-form {
+    font-family: $montserratR-font;
+    font-size: 14px;
+    color: $white-color;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 150px;
+    height: 40px;
+    background-color: $light-green-color;
+    border: none;
+}
+
+.input-email {
+    width: 228px;
+    height: 40px;
+}
+
+.form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 28px;
+    margin-bottom: 30px;
+}
+
+.text {
+    font-family: $montserratR-font;
+    font-size: 14px;
+    font-weight: 300;
+    color: $dark-grey-color;
+    margin-top: 40px;
+}
