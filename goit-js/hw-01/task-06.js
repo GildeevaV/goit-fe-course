@@ -27,7 +27,7 @@ if (!isNaN(Number(inputMessage)))
 
 }while(true);
 
-console.log('Сумма операций равна ${total}; Количество итераций ${numOfIteration}!');
+console.log(`Сумма операций равна ${total}; Количество итераций ${numOfIteration}!`);
 }
 
 
