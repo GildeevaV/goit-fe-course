@@ -723,9 +723,8 @@
 // };
 // console.log(makeProduct('Apples',50));
 
-
 // const product = {
-//       name: "Wunder Waffles", 
+//       name: "Wunder Waffles",
 //       description: 'Lorem ipsum',
 //       price: 30,
 //       changePrice(newPrice) {
@@ -754,7 +753,7 @@
 
 // storage.addProduct({ id: 'id-3', name: 'carrots', price: 20 });
 
-// console.table(storage.getItems());    
+// console.table(storage.getItems());
 
 // перебор объектов , цикл for...in
 
@@ -815,19 +814,15 @@
 
 // console.log(city);
 
-
-
-
 // const hotel = {
 //     name: 'Resort Hotel',
 //     stars: 5,
 //     capacity: 100,
 //   };
-  
+
 //   for (const key in hotel) {
 //     console.log('Value: ', hotel[key]);
 //   }
-
 
 // const a = { x: 1, y: 2 };
 // const b = { x: 0, z: 3 };
@@ -842,11 +837,73 @@
 
 // Шаблонная строка записывается в ``
 
-<script type="text/javascript" src="./task1.js"></script>
-<script type="text/javascript" src="./task2.js"></script> 
-<script type="text/javascript" src="./task3.js"></script> 
-<script type="text/javascript" src="./task4.js"></script>   
-<script type="text/javascript" src="./task5.js"></script>
-<script type="text/javascript" src="./task6.js"></script> 
-<script type="text/javascript"> 
-</script>  
+// const printMessage = function(message) {
+//     console.log(message);
+//   };
+
+//   const higherOrderFunction = function(callback) {
+//     const string = 'HOCs are awesome';
+//     callback(string);
+//   };
+
+//   higherOrderFunction(printMessage);
+
+
+
+// const filter = function(array, testCallback) {
+//   const result = [];
+
+//   for (const el of array) {
+//     const passed = testCallback(el);
+
+//     if (passed) {
+//       result.push(el);
+//     }
+//   }
+
+//   return result;
+// };
+
+// // const fnGt3 = function(el) {
+// //   return el >= 3;
+// // };
+
+// console.log(
+//   filter([1, 2, 3, 4, 5, 6, 7, 8], function(el) {
+//     return el >= 1;
+//   })
+// );
+
+// console.log(
+//   filter([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], function(el) {
+//     return el >= 7;
+//   })
+// );
+
+// console.log(
+//   filter([1, 2, 3, 4, 5], function(el) {
+//     return el >= 5;
+//   })
+// );
+
+// console.log(
+//   filter([1, 2, 3, 4, 5], function(el) {
+//     return el >= 10;
+//   })
+// );
+
+// стрелочные ф-и
+ 
+// const add = function(a, b) {
+//   return a + b;
+// };
+
+// const petya = {
+//   name: 'Petya',
+//   showName() {
+//     console.log(petya.name);
+//   },
+// };
+
+// petya.showName();
+
