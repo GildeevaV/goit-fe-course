@@ -1,4 +1,4 @@
-import "/task-02.js";
+
 
 const countProps = function(obj) {
   return Object.keys(obj).length;

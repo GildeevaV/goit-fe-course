@@ -1,4 +1,3 @@
-import "/task-01.js";
 
 const user = {
   name: "Mango",

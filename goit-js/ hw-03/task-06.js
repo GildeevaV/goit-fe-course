@@ -1,4 +1,4 @@
-import "/task-06.js";
+
 
 const products = [
   { name: "Радар", price: 1300, quantity: 4 },

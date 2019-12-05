@@ -1,4 +1,4 @@
-import "/task-04.js";
+
 
 const countTotalSalary = employees => {
   let totalSalary = 0;
