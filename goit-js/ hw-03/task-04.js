@@ -1,19 +1,14 @@
-
-
 const countTotalSalary = employees => {
   let totalSalary = 0;
-  let result = "";
   for (const key in employees) {
-    console.log(key, employees[key]);
+    console.log('Value: ', employees[key],key);
 
-    if (totalSalary < employees[key]) {
-      totalSalary = employees[key];
-      result = key;
-    }
+   totalSalary = totalSalary + employees[key];
+
   }
-
-  return result;
+  return totalSalary;
 };
+
 
 //   console.log(countTotalSalary({})); // 0
 
