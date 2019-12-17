@@ -7,4 +7,3 @@ const calculateTotalBalance = function() {
 };
 
 console.log(calculateTotalBalance(users)); // 20916
-
