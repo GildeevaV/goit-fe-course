@@ -2,43 +2,45 @@ import './styles.css';
 import menu from './menu.json';
 import menuItem from './menu.hbs';
 
-const menuUl = document.querySelector('.js-menu')
-// menuUl.innerHTML()
+const menuUl = document.querySelector('.js-menu');
 
-function createMenuList(list) {
-    
+function createMenuList(menu) {
+  const items = menu.map(menu => menuItem(menu)).join('');
+  menuUl.insertAdjacentHTML('beforeend', items);
 }
+
+createMenuList(menu);
+
 const Theme = {
-    LIGHT: 'light-theme',
-    DARK: 'dark-theme',
+  LIGHT: 'light-theme',
+  DARK: 'dark-theme',
 };
-const input = document.querySelector('#theme-switch-control');
-const bodyTheme = document.body;
-let currentTheme = localStorage.getItem('theme');
 
-const checkBox = document.querySelector('input[tupe = "checkBox"]')
-input.addEventListener('click', clickEvent)
+const input = document.getElementById('theme-switch-control');
+const pageTheme = document.body;
+const currentTheme = localStorage.getItem('Theme');
 
- if (currentTheme === DARK) {
-     bodyTheme.classList.add('dark-theme');
-     checkBox.checked = true;
- }else{
-     bodyTheme.classList.add('light-theme');
-     checkBox.checked = false;
- }
+const checkBox = document.querySelector('input[type="checkbox"]');
+input.addEventListener('click', clickEvent);
 
-// bodyTheme.classList.add('light-theme');
+if (currentTheme === 'DARK') {
+  pageTheme.classList.add('dark-theme');
+  checkBox.checked = true;
+} else {
+  pageTheme.classList.add('light-theme');
+  checkBox.checked = false;
+}
 
 function clickEvent(e) {
-    if (bodyTheme.classList.contains('light-theme')) {
-        bodyTheme.classList.remove('light-theme');
-        bodyTheme.classList.add('dark-theme');
-        localStorage.setItem('Theme', 'DARK')
-    }else{
-        bodyTheme.classList.remove('dark-theme');
-        bodyTheme.classList.add('light-theme');
-        localStorage.setItem('Theme', 'LIGHT')
-    }
+  if (pageTheme.classList.contains('light-theme')) {
+    pageTheme.classList.remove('light-theme');
+    pageTheme.classList.add('dark-theme');
+    localStorage.setItem('Theme', 'DARK');
+  } else {
+    pageTheme.classList.remove('dark-theme');
+    pageTheme.classList.add('light-theme');
+    localStorage.setItem('Theme', 'LIGHT');
+  }
 }
 
-localStorage.getItem('Theme')
+localStorage.getItem('Theme');
