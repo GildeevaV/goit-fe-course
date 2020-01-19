@@ -1,0 +1,22 @@
+.timer {
+font-family: 'Roboto', sans-serif;
+font-size: 40px;
+color: #E9967A;
+}
+
+.container {
+    width: 1300px;
+    height: 1000px;
+    background: linear-gradient(45deg, #CC95C0, #DBD4B4, #7AA1D2);
+    margin-top: -10px;
+    margin-left: -10px;
+    text-align: center;
+}
+
+.wrapper {
+    width: 300px;
+    height: 200px;
+    border: 2px solid rgb(197, 192, 192);
+    border-radius: 15px;
+    margin: 0 auto;
+}
